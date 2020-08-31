@@ -1,0 +1,38 @@
+{
+  "author": {
+    "name": "Victor Camara Lessa",
+    "email": "victordsgnr@gmail.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "graceful-fs": "^4.2.4",
+    "request": "^2.88.0",
+    "togeojson": "^0.16.0",
+    "unzip2": "^0.2.5",
+    "xmldom": "^0.1.27"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
+  },
+  "deprecated": false,
+  "description": "Parse KMZ Files",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  },
+  "keywords": [
+    "KML",
+    "KMZ",
+    "JSON",
+    "parse KML",
+    "parse KMZ",
+    "map"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "parse2-kmz",
+  "scripts": {
+    "test": "mocha",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "version": "1.0.0"
+}
