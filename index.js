@@ -1,8 +1,8 @@
 module.exports = (function () {
-  const fs = require("graceful-fs");
+  const fs = require("fs");
   const request = require("request");
   const togeojson = require("togeojson");
-  const unzip2 = require("unzip2");
+  const unzipper = require("unzipper");
   const xmldom = new (require("xmldom").DOMParser)();
 
   /**
@@ -15,7 +15,7 @@ module.exports = (function () {
     return new Promise((resolve, reject) => {
       if (path.indexOf("http") === 0) {
         request(path)
-          .pipe(unzip2.Parse())
+          .pipe(unzipper.Parse())
           .on("entry", function (entry) {
             if (entry.path.indexOf(".kml") === -1) {
               entry.autodrain();
@@ -36,7 +36,7 @@ module.exports = (function () {
           .on("error", reject);
       } else {
         fs.createReadStream(path)
-          .pipe(unzip2.Parse())
+          .pipe(unzipper.Parse())
           .on("entry", function (entry) {
             if (entry.path.indexOf(".kml") === -1) {
               entry.autodrain();

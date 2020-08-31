@@ -1,41 +1,36 @@
-parse-kmz
-===========
-Ever had the urge to parse KMZ? And wanted to access the data in some sane,
-easy way? Don't want to compile a C parser, for whatever reason? Then parse-kmz is
-what you're looking for!
+# parse2-kmz
 
-Installation
-============
+This version is an update to the [parse-kmz](https://www.npmjs.com/package/parse-kmz) package where there was an error in the [unzip](https://www.npmjs.com/package/unzip2) package causing conflict when parsearing the geoJSON
 
-Simplest way to install `parse-kmz` is to use [npm](http://npmjs.org), just `npm
-install parse-kmz` which will download parse-kmz and all dependencies.
+# Installation
 
-Usage
-=====
+Simplest way to install `parse2-kmz` is to use [npm](http://npmjs.org), just `npm install parse2-kmz` which will download parse-kmz and all dependencies.
+
+# Usage
 
 ```javascript
-const parseKMZ = require('parse-kmz');
+const parseKMZ = require('parse2-kmz');
 // KMZ To KML From URL
 parseKMZ
   .toKML('http://iblogbox.github.io/js/gpx/sample/Tour_de_France.kmz')
   .then(console.log);
   .catch(console.error);
- 
+
 // KMZ To KML From File
 parseKMZ
-  .toKML('./path-to-file/file-name.kmz')
+  .toKML('./file/kmx.kmz')
   .then(console.log);
   .catch(console.error);
-  
+
 // KMZ To JSON From URL
 parseKMZ
   .toJson('http://iblogbox.github.io/js/gpx/sample/Tour_de_France.kmz')
   .then(console.log);
   .catch(console.error);
- 
+
 // KMZ To JSON From File
 parseKMZ
-  .toJson('./path-to-file/file-name.kmz')
+  .toJson('./file/kmx.kmz')
   .then(console.log);
   .catch(console.error);
 ```
