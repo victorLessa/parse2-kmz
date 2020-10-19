@@ -9,30 +9,24 @@ Simplest way to install `parse2-kmz` is to use [npm](http://npmjs.org), just `np
 # Usage
 
 ```javascript
-const parseKMZ = require('parse2-kmz');
+const parseKMZ = require("parse2-kmz");
 // KMZ To KML From URL
 parseKMZ
-  .toKML('http://iblogbox.github.io/js/gpx/sample/Tour_de_France.kmz')
-  .then(console.log);
+  .toKML("http://iblogbox.github.io/js/gpx/sample/Tour_de_France.kmz")
+  .then(console.log)
   .catch(console.error);
 
 // KMZ To KML From File
-parseKMZ
-  .toKML('./file/kmx.kmz')
-  .then(console.log);
-  .catch(console.error);
+parseKMZ.toKML("./file/kmx.kmz").then(console.log).catch(console.error);
 
 // KMZ To JSON From URL
 parseKMZ
-  .toJson('http://iblogbox.github.io/js/gpx/sample/Tour_de_France.kmz')
-  .then(console.log);
+  .toJson("http://iblogbox.github.io/js/gpx/sample/Tour_de_France.kmz")
+  .then(console.log)
   .catch(console.error);
 
 // KMZ To JSON From File
-parseKMZ
-  .toJson('./file/kmx.kmz')
-  .then(console.log);
-  .catch(console.error);
+parseKMZ.toJson("./file/kmx.kmz").then(console.log).catch(console.error);
 ```
 
 But if you know you really found a bug, feel free to open an issue instead.

@@ -19,6 +19,8 @@
     "KML",
     "KMZ",
     "JSON",
+    "geoJson",
+    "parse",
     "parse KML",
     "parse KMZ",
     "map"
@@ -29,5 +31,9 @@
   "scripts": {
     "test": "mocha"
   },
-  "version": "1.0.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorLessa/parse2-kmz"
+  },
+  "version": "1.0.5"
 }
