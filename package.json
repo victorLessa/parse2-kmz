@@ -6,9 +6,9 @@
   "bundleDependencies": false,
   "dependencies": {
     "@mapbox/togeojson": "^0.16.0",
+    "@xmldom/xmldom": "^0.8.0",
     "request": "^2.88.2",
-    "unzipper": "^0.10.11",
-    "xmldom": "^0.6.0"
+    "unzipper": "^0.10.11"
   },
   "deprecated": false,
   "description": "Parse KMZ Files",
