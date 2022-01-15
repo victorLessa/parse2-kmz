@@ -5,15 +5,15 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "request": "^2.88.0",
-    "togeojson": "^0.16.0",
+    "@mapbox/togeojson": "^0.16.0",
+    "request": "^2.88.2",
     "unzipper": "^0.10.11",
-    "xmldom": "^0.1.27"
+    "xmldom": "^0.6.0"
   },
   "deprecated": false,
   "description": "Parse KMZ Files",
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^9.1.4"
   },
   "keywords": [
     "KML",
@@ -35,5 +35,5 @@
     "type": "git",
     "url": "git+https://github.com/VictorLessa/parse2-kmz"
   },
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
