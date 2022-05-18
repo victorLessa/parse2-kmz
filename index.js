@@ -1,9 +1,9 @@
 module.exports = (function () {
   const fs = require("fs");
   const request = require("request");
-  const togeojson = require("togeojson");
+  const togeojson = require("@mapbox/togeojson");
   const unzipper = require("unzipper");
-  const xmldom = new (require("xmldom").DOMParser)();
+  const xmldom = new (require("@xmldom/xmldom").DOMParser)();
 
   /**
    *
