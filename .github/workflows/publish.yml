@@ -20,7 +20,7 @@ jobs:
       - run: npm test
 
   publish-gpr:
-    needs: build
+    needs: run-test
     runs-on: ubuntu-latest
     permissions:
       contents: read
